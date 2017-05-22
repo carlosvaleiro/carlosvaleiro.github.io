@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Sansita');
 * {
     box-sizing: border-box;
     /* changes width property
-    to total width instead of content width */
+  to total width instead of content width */
 }
 
 article,
@@ -15,27 +16,34 @@ figcaption,
 figure {
     display: block;
     /* just in case we have
-any older browsers that don't recognize
-the HTML5 semantic elements */
+  any older browsers that don't recognize
+  the HTML5 semantic elements */
 }
+
+
+/*Attributes for the body*/
 
 body {
     margin: 0;
     /* remove any margin from body */
     padding: 0;
     /* ditto for padding */
-    background-color: #C4C641;
-    font-family: 'Rubik', sans-serif;
-    background-image: url(winter-wallpaper-12.jpg);
+    background-color: rgba(250, 128, 114, 0.1);
+    font-family: helvetica, arial, sans-serif;
+    font-size: 1em;
+    background-image: url("sunny-winter.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.bodywrap {
+.bodywrap{
     display: flex;
-    align-content: center;
     flex-direction: column;
+    align-content: center;
 }
+
+
+/*Attributes for the main section*/
 
 main {
     display: flex;
@@ -43,21 +51,118 @@ main {
     align-items: center;
 }
 
-ul {
-    list-style: none;
-}
-.mainnav{
+
+/*Attributes for the nav bar general*/
+
+nav {
+    background-color:dodgerblue;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: floralwhite;
-    height: 70px;
-    display: flex;
-    align-items: center;
+    font-size: 1.1em;
+    justify-content: space-around;
+    flex-flow: wrap;
 }
-nav a:link{
-    text-decoration: none;
-    color: currentColor;
 
+
+/*Attributes for the nav bar listed items*/
+
+nav>ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+    /*padding-left: 12em;*/
+    /*margin-top: -4.2em;*/
+    line-height: .75em;
 }
+
+nav li {
+    flex: 1 1 5em;
+}
+
+nav a:link {
+    color: #4A4653;
+}
+
+nav a:visited {
+    color: #4A4653;
+}
+
+nav a:hover {
+    color: #E7EF61;
+}
+
+nav a:active {
+    color: #A6D8DB;
+    background-color: #47556F;
+    font-size: 1.105em;
+}
+
+
+/*Attributes second header at the title of the website*/
+
+.title h1+h1 {
+    text-align: right;
+    margin-top: -.7em;
+}
+
+
+/*Font attribute for Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Sansita, "second choice", generic-family;
+}
+
+
+/*Heading H1 attributes*/
+
+h1 {
+    font-size: 1.2em;
+}
+
+
+/*Heading H2 attributes*/
+
+h2 {
+    font-size: 1.1em;
+}
+
+
+/*Header properties*/
+
+header {
+    background-color:dodgerblue;
+}
+
+
+/*Main properties*/
+
+main {
+    background-image: url("sunny-winter.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/*Footer properties*/
+
+footer {
+    background-color:aliceblue;
+}
+
+.cur_conditions, .location, .temp2, .temperature, .hourly {
+    background-color: rgba(200, 200, 200, .6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+
+
