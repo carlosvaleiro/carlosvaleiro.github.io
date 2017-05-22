@@ -48,7 +48,7 @@ body {
 main {
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
+    align-items: center;    
 }
 
 
@@ -56,12 +56,12 @@ main {
 
 nav {
     background-color:dodgerblue;
-    position: fixed;
+    position:fixed;
     bottom: 0;
     left: 0;
     right: 0;
     font-size: 1.1em;
-    justify-content: space-around;
+    justify-content:space-around;
     flex-flow: wrap;
 }
 
@@ -83,7 +83,7 @@ nav li {
 }
 
 nav a:link {
-    color: #4A4653;
+    color: whitesmoke;
 }
 
 nav a:visited {
@@ -150,19 +150,24 @@ main {
     background-repeat: no-repeat;
 }
 
-
 /*Footer properties*/
 
 footer {
-    background-color:aliceblue;
+    display:flex;
+    font-size: 20px;
+    background-color: darkgrey;
+    
+    
 }
 
-.cur_conditions, .location, .temp2, .temperature, .hourly {
+.cur_conditions, .hourly, .location {
     background-color: rgba(200, 200, 200, .6);
-    margin: .2em auto;
+    margin: 3em auto;
     border: 1px solid;
     border-radius: 5px;
 }
+
+
 
 
 
