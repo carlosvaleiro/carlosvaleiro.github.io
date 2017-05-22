@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    /* changes width property
+    to total width instead of content width */
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figcaption,
+figure {
+    display: block;
+    /* just in case we have
+any older browsers that don't recognize
+the HTML5 semantic elements */
+}
+
+body {
+    margin: 0;
+    /* remove any margin from body */
+    padding: 0;
+    /* ditto for padding */
+    background-color: #C4C641;
+    font-family: 'Rubik', sans-serif;
+    background-image: url(winter-wallpaper-12.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bodywrap {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+ul {
+    list-style: none;
+}
+.mainnav{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: floralwhite;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+nav a:link{
+    text-decoration: none;
+    color: currentColor;
+
+}
