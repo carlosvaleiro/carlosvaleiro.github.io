@@ -30,13 +30,13 @@ body {
     /* ditto for padding */
     background-color: rgba(250, 128, 114, 0.1);
     font-family: helvetica, arial, sans-serif;
-    font-size: 1em;
+    font-size: 20px;
     background-image: url("sunny-winter.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.bodywrap{
+.bodywrap {
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -48,20 +48,20 @@ body {
 main {
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;    
+    align-items: center;
 }
 
 
 /*Attributes for the nav bar general*/
 
 nav {
-    background-color:dodgerblue;
-    position:fixed;
+    background-color: deepskyblue;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
     font-size: 1.1em;
-    justify-content:space-around;
+    justify-content: center;
     flex-flow: wrap;
 }
 
@@ -91,7 +91,7 @@ nav a:visited {
 }
 
 nav a:hover {
-    color: #E7EF61;
+    color: #E7EF68;
 }
 
 nav a:active {
@@ -138,7 +138,7 @@ h2 {
 /*Header properties*/
 
 header {
-    background-color:dodgerblue;
+    background-color: dodgerblue;
 }
 
 
@@ -147,27 +147,45 @@ header {
 main {
     background-image: url("sunny-winter.jpg");
     background-size: cover;
-    background-repeat: no-repeat;
+    
 }
+
 
 /*Footer properties*/
 
 footer {
-    display:flex;
+    display: flex;
     font-size: 20px;
     background-color: darkgrey;
-    
-    
 }
 
-.cur_conditions, .hourly, .location {
+.cur_conditions,
+.hourly,
+.location {
     background-color: rgba(200, 200, 200, .6);
     margin: 3em auto;
     border: 1px solid;
     border-radius: 5px;
+    width: 100%;
 }
 
+@media only screen and (min-width: 650px){
+    
+    main {
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: stretch;
+    }
 
-
-
-
+    .cur_conditions,
+    .hourly,
+    .location {
+        width: 30%;
+        }
+    nav {
+       position: relative;
+       padding: 1em;
+       padding: .25em;
+       
+    }
+}
