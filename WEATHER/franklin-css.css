@@ -216,7 +216,7 @@ body {
 .center_main {
     color: #fffff0;
     text-align: center;
-    display: inline none;
+    display: inline-block;
 }
 /*Hide current forcast put in desktop setting*/
 
