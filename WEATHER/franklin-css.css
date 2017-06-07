@@ -16,7 +16,7 @@ footer {
     line-height: 2.5;
     flex-grow: 2;
     margin-bottom: -1px;
-    padding-bottom: -1px;
+    padding-bottom: 1px;
     
 }
 /* general settings for normal footer link*/
@@ -129,8 +129,7 @@ main {
 .wind #wind_mph {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: right;
+    align-self: flex-start;
 }
 /*perceptation area*/
 
