@@ -45,7 +45,7 @@ $(function () {
                 
                 
                 
-                $("#page-header").load("/jsonweather-html/");
+                $("#page-header").load("/modules/header.html");
                 $("#page-nav").load("/jsonweather-html/modules/navigation.html");
                 $("#footer-content").load("/jsonweather-html/modules/footer.html");
                 
