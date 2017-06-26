@@ -1,28 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Sansita');
 *{
     margin:0;
 }
 .wrapper{
-    width: 100%;
-    color:#006699;
+    width: %;
+    color:#000;
+    
 }
 
 p{
     margin-top: 16px;
-    font-family: Georgia;
+    font-family:;
   
 }
 .title{ 
     font-family: serif;
     font-size: 18pt;
-    padding: 10px;
+    padding: 20px;
 }
 .navigation {
-    height: 20px;
+    height: 50px;
     background: black;
-    color:cornsilk;
-    margin-top: 3px;
-    margin-bottom: 3px;
-    padding: 10px;
+    color:chartreuse;
+    margin-top: 50px;
+    margin-bottom:0px;
+    padding: 15px;
+    
 }
 
 .navigation ul{
@@ -31,45 +34,39 @@ p{
 
 .navigation ul li{
     display: inline;
-    margin-right: 30px;
+    margin-right: 100px;
     padding: 3px;
 }
 
 .navigation a {
-    color:blanchedalmond;
+    color:chartreuse;
     text-decoration: none;
 }
 
 .navigation a: hover{
     color: white;
-    text-decoration: underline;
+
 }
 .content {
     min-height: 400px;
-    background: ligthgrey;
-    color:black;
+    background-color: #000;
+    color:chartreuse;
     width: 380px;
     float: left;
-    padding: 10px;
+    padding: 50px;
+    
 }
 
-.sidebar {
-    width: 300px;
-    float: right;
-    background: darkgray;
-    font-family: georgia; 
-    font-size: 15;
-    min-height: 400px;
-    color:black;
-    padding: 10px;
+
 }
 
 .footer{
+    align-content: flex-end;
     clear:both;
-    background:#006699 ;
+    background-color: #000;
     height: 30px;   
-    color: blanchedalmond;
-    text-align: center;
-    padding:10px;  
+    color:chartreuse;
+    align-self: baseline;
+    padding:60px;  
     font-size: 12px;
 }
