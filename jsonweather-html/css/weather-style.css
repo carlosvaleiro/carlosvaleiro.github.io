@@ -28,6 +28,7 @@ body {
   font-family: helvetica, arial, sans-serif;
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
+    background-color:deepskyblue;
 }
 
 
@@ -44,6 +45,7 @@ body {
 
 #page-header h1 {
   margin: 0;
+    color:#000  ;
 }
 
 .tagline {
@@ -51,6 +53,7 @@ body {
   font-style: italic;
   font-size: .75em;
   margin: 0 0 0 1em;
+
 }
 
 
@@ -59,7 +62,7 @@ body {
 #page-nav ul {
   border: 1px solid #000;
   border-bottom: 1px solid #fff;
-  list-style: none;
+  list-style:circle;
 }
 
 #page-nav .flexlist li {
@@ -71,7 +74,7 @@ body {
   display: flex;
   flex: auto;
   background-color: #000;
-  color: #fff;
+  color:chartreuse;
   padding: 1% 5%;
   text-decoration: none;
 }
@@ -92,7 +95,7 @@ body {
   font-size: .7rem;
   margin: 0;
   background-color: #000;
-  color: #fff;
+  color:chartreuse;
 }
 
 #page-footer > * {
@@ -101,6 +104,7 @@ body {
 
 #page-footer li {
   padding-right: 1em;
+    color:chartreuse;
 }
 
 
