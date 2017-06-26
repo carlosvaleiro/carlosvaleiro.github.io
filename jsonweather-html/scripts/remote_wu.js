@@ -33,7 +33,7 @@ $(function () {
                 var sum = parsed_json['current_observation']['weather'];
                 var feelslike = parsed_json['current_observation']['feelslike_f'];
                 var humidity = parsed_json['current_observation']['relative_humidity'];
-                var wind = parsed_json['current_observation']['wind_mph']
+                var wind = parsed_json['current_observation']['wind_mph'];
                 var local_time = parsed_json['current_observation']['local_time_rfc822'];
                 $("#currentTemp").html( Math.round(temp_f) + "&#8457");
                 $("#cityDisplay").text( location + ", " + stateName);
