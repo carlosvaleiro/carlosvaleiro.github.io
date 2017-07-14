@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+* {
+    /* changes width property to total width, not contentent width*/
+    box-sizing: border-box;
+    /* changes width property to total width, not contentent width*/
+}
+
+
+/*phone screen
+/*universal info for bottom of screen*/
+
+page-nav
+searchResults
+page-main
+page-footer
+weather-container
+
+page-footer {
+    background-color: aqua;
+}
+
+.weather-container{
+    align-self: center;
+}
+.page-nav{
+    background-color: darkorange;
+}
+.searchResults{
+    background-color:chartreuse;
+}
+.page-main{
+    align-content:flex-end;
+}

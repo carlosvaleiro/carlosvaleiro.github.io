@@ -28,7 +28,6 @@ $("#searchResults").on("click", "a", function (evt) {
     console.log(jsonCity);
     index = $(this).index("a");
 
-    getData(returned.RESULTS[index].zmw);
     getData(index.lat, index.lon);
 
     $('#searchResults').hide();
@@ -40,13 +39,14 @@ function getData(lat, lon){
         url:"https://api.wunderground.com/api/2a32c49c490f6b17/geolookup/conditions/q/" + lat + ',' + lon + ".json",
         dataType : "jsonp",
         success : function(parsed_json) {
-            var location = parsed_json['location']['city'];
-            var temp_f = parsed_json['current_observation']['temp_f'];
+            var location = parsed_json['location'];
+            var temp_f = parsed_json.temp_f;
             $('#currentTemp').html(Math.round(temp_f) +  " &#8457" );
 
             $("title").text(parsed_json.current_observation.display_location.full);
             $("#cityDisplay").text(parsed_json.current_observation.display_location.full);
             $("#summary").text(parsed_json.current_observation.weather);
+            
            
 
             $("#cover").fadeOut(250);
